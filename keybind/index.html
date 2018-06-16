@@ -10,7 +10,7 @@
             list-style: none;
             display: flex;
         }
-        
+
         .key-item {
             margin: 1rem;
             border: 1px solid #999;
@@ -22,15 +22,20 @@
             text-transform: uppercase;
             user-select: none;
         }
-        
+
         .key-item:hover {
             background-color: lightcoral;
-            transform: translateY(-3px);
+            transform: translateY(-3px) scale(1.1, 1);
         }
-        
+
         .key-item:active {
             transform: translateY(-1px);
             border: 1px solid gold;
+        }
+
+        .active {
+            background-color: lightcoral;
+            transform: translateY(-3px) scale(1.1, 1);
         }
     </style>
 </head>
@@ -48,7 +53,7 @@
         <li class="key-item" data-key="k">K</li>
     </ul>
 </div>
-
+<audio src="" ></audio>
 <script src="index.js"></script>
 
 </body>

@@ -5,21 +5,51 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .board ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        .key-item {
+            margin: 1rem;
+            border: 1px solid #999;
+            padding: 3px;
+            min-width: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            user-select: none;
+        }
+        
+        .key-item:hover {
+            background-color: lightcoral;
+            transform: translateY(-3px);
+        }
+        
+        .key-item:active {
+            transform: translateY(-1px);
+            border: 1px solid gold;
+        }
+    </style>
 </head>
 <body>
 
 <div class="board">
-    <ul>
-        <li class="key-item">A</li>
-        <li class="key-item">S</li>
-        <li class="key-item">D</li>
-        <li class="key-item">F</li>
-        <li class="key-item">G</li>
-        <li class="key-item">H</li>
-        <li class="key-item">J</li>
-        <li class="key-item">K</li>
+    <ul class="key-list">
+        <li class="key-item" data-key="a">A</li>
+        <li class="key-item" data-key="s">S</li>
+        <li class="key-item" data-key="d">D</li>
+        <li class="key-item" data-key="f">F</li>
+        <li class="key-item" data-key="g">G</li>
+        <li class="key-item" data-key="h">H</li>
+        <li class="key-item" data-key="j">J</li>
+        <li class="key-item" data-key="k">K</li>
     </ul>
 </div>
+
+<script src="index.js"></script>
 
 </body>
 </html>

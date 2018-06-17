@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clock</title>
+    <style media="screen">
+.main {
+    left: 0;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(to right bottom, lightcoral, lightblue);
+}
+
+.clock {
+    width: 100px;
+    height: 100px;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pointer__hour {
+    height: 25%;
+    width: 3px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:  25%;
+    transform-origin: bottom;
+    transform:translateX(-50%) rotate(0deg);
+}
+
+.pointer__minute {
+    height: 35%;
+    width: 3px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:  15%;
+    transform-origin: bottom;
+    transform:translateX(-50%) rotate(20deg);
+}
+
+.pointer__second {
+    height: 45%;
+    width: 3px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:  5%;
+    transform-origin: bottom;
+    transform:translateX(-50%) rotate(30deg);
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="clock">
+            <span class="pointer__hour" style="transform: translateX(-50%) rotate(0deg);"></span>
+            <span class="pointer__minute" style="transform: translateX(-50%) rotate(0deg);"></span>
+            <span class="pointer__second" style="transform: translateX(-50%) rotate(0deg);"></span>
+
+        </div>
+    </div>
+<script src="./clock.js"></script>
+</body>
+
+</html>

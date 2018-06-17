@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>manipulate css variable by js</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <div class="section__shadow">
+        <h2>box shadow</h2>
+        <div class="shadow__box">
+            <img src="./wood.jpg" alt="" class="box__img">
+        </div>
+        <div class="controls">
+            <div class="control__wrapper">
+                <label for="border-radius"> border radius</label>
+                <input type="range" name="border-radius" id="border-radius" data-unit="px" min=0 value=0>
+                <span>0px</span>
+
+            </div>
+            <div class="control__wrapper">
+                <label for="blur"> blur</label>
+                <input type="range" name="blur" id="blur" data-unit="px" min=0 value=0>
+                <span>0px</span>
+            </div>
+            <div class="control__wrapper">
+                <label for="brightness"> brightness</label>
+                <input type="range" name="brightness" min=0 max=100 max="100%" id="brightness" data-unit='%' value=100>
+                <span>100%</span>
+
+            </div>
+            <div class="control__wrapper">
+                <label for="color"> font-color</label>
+                <input type="color" name="font-color" id="color" data-unit="">
+                <span></span>
+
+            </div>
+        </div>
+    </div>
+
+<script src="../utils.js"></script>
+    <script src="control.js"></script>
+</body>
+
+</html>

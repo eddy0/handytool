@@ -1,0 +1,54 @@
+:root {
+    --blur: 0px;
+    --background-color: lightblue;
+    --brightness: 100%;
+    --grayscale: 0%;
+    --sepia: 0%;
+    --saturate: 0%;
+    --hue-rotate: 0deg;
+    --font-color: #000;
+    --border-radius: 0px;
+}
+
+.section__shadow  {
+    padding: 5%;
+}
+
+.section__shadow h2 {
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.shadow__box {
+    width: 300px;
+    height: 300px;
+    font-size: 18px;
+}
+
+.controls {
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+.control__wrapper {
+    padding: 10px;
+}
+
+
+
+.box__img {
+    display: block;
+    height: 100%;
+    border-radius: var(--border-radius);
+    filter: blur(var(--blur))
+            brightness(var(--brightness));
+    /* filter: blur(var(--blur))
+            brightness(var(--brightness))
+            grayscale(var(--grayscale))
+            sepia(var(--sepia))
+            saturate(var(--saturate))
+            hue-rotate(var(--hut-rotate)); */
+}

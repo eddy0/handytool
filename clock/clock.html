@@ -26,6 +26,22 @@
     position: relative;
 }
 
+
+
+.clock__center {
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+
+
 .pointer__hour {
     height: 25%;
     width: 3px;
@@ -36,6 +52,7 @@
     top:  25%;
     transform-origin: bottom;
     transform:translateX(-50%) rotate(0deg);
+
 }
 
 .pointer__minute {
@@ -60,6 +77,7 @@
     top:  5%;
     transform-origin: bottom;
     transform:translateX(-50%) rotate(30deg);
+    /* transition: all 0.3s cubic-bezier(0.64, 0.21, 0, 1.77); */
 }
     </style>
 </head>
@@ -67,10 +85,10 @@
 <body>
     <div class="main">
         <div class="clock">
+            <span class="clock__center"></span>
             <span class="pointer__hour" style="transform: translateX(-50%) rotate(0deg);"></span>
             <span class="pointer__minute" style="transform: translateX(-50%) rotate(0deg);"></span>
             <span class="pointer__second" style="transform: translateX(-50%) rotate(0deg);"></span>
-
         </div>
     </div>
 <script src="./clock.js"></script>

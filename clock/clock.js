@@ -22,11 +22,12 @@ const updateClock = (time) => {
     let minutePointer = e('.pointer__minute')
     let secondPointer = e('.pointer__second')
     let secondDeg = 360 / 60 * second
-    let minuteDeg = 360 / 60 * minute + 30 / 60 * second
+    let minuteDeg = 360 / 60 * minute
     let hourDeg = 360 / 12 * hour + 30 / 60 * minute
     secondPointer.style.transform = `translateX(-50%) rotate(${secondDeg}deg)`
     minutePointer.style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`
     hourPointer.style.transform = `translateX(-50%) rotate(${hourDeg}deg)`
+    log(secondDeg, minuteDeg, hourDeg)
 }
 
 

@@ -7,7 +7,7 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ![gif](http://recordit.co/I4NRHJbmtb)
 
 ## clock
-![http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/clock/clock.html] clock
+![clock](./clock/clock.gif)
 
 
 ## css carouser

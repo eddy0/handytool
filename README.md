@@ -12,3 +12,7 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 ## css carouser
 ![carouser](./flexGallery/carouser.gif)
+
+
+## mutiSelect when shift
+![mutiSelect](./mutiSelect/mutiSelect.gif)

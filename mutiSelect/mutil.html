@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi Select</title>
+    <style media="screen">
+         ul {
+             list-style: none;
+         }
+
+         .todo-item {
+             padding: 10px;
+             font-size: 18px;
+         }
+
+         input {
+             width: 20px;
+             height: 20px;
+         }
+
+         input[type='checkbox']:checked + .todo-content {
+             text-decoration: line-through;
+         }
+
+    </style>
+
+</head>
+<body>
+
+<ul class="todo-list">
+    <li class="todo-item" data-index='1'>
+        <input type="checkbox">
+        <span class="todo-content">todo 1</span>
+    </li>
+    <li class="todo-item"  data-index='2'>
+        <input type="checkbox">
+        <span class="todo-content">todo 2</span>
+    </li>
+    <li class="todo-item"  data-index='3'>
+        <input type="checkbox">
+        <span class="todo-content">todo 3</span>
+    </li>
+    <li class="todo-item"  data-index='4'>
+        <input type="checkbox">
+        <span class="todo-content">todo 4</span>
+    </li>
+    <li class="todo-item"  data-index='5'>
+        <input type="checkbox">
+        <span class="todo-content">todo 5</span>
+    </li>
+    <li class="todo-item"  data-index='6'>
+        <input type="checkbox">
+        <span class="todo-content">todo 6</span>
+    </li>
+
+</ul>
+
+<script src="../utils.js"></script>
+<script src="./mutil.js"></script>
+
+</body>
+</html>

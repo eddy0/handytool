@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text shadow</title>
+    <style media="screen">
+:root {
+    --offset-x: 3px;
+    --offset-y: 4px;
+    --line: var(--offset-x) var(--offset-y) rgba(0, 0, 0, 0.3);
+}
+
+.text-box {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    margin-top: 40vh;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+}
+
+.text {
+    text-shadow: var(--line);
+    pointer-events: none;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="text-box">
+        <p class="text">this is the shadow</p>
+
+    </div>
+
+    <script src="../utils.js">
+    </script>
+    <script>
+const textShadow = () => {
+    let text = e('.text')
+    let box = e('.text-box')
+    box.addEventListener('mousemove', (event) => {
+        let offset = 50
+        let x = event.offsetX
+        let y = event.offsetY
+        let w = box.offsetWidth
+        let h = box.offsetHeight
+        let self = event.target
+        let offsetX = Math.floor(x / w * offset  - offset / 2)
+        let offsetY = Math.floor(y / h * offset - offset / 2)
+        document.documentElement.style.setProperty('--offset-x', `${offsetX}px`)
+        document.documentElement.style.setProperty('--offset-y', `${offsetY}px`)
+    })
+}
+
+textShadow()
+    </script>
+</body>
+
+</html>

@@ -16,3 +16,8 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 ## mutiSelect when shift
 ![mutiSelect](./mutiSelect/mutiSelect.gif)
+
+
+
+## dynamic text shadow offset when mouse move
+![textShadow](./dynamicTextShadow/textShadow.gif)

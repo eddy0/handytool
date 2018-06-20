@@ -7,6 +7,15 @@ const getVideo = () => {
     }).catch((err) => alert('please allow the webcam to operate it'))
 }
 
+const alphaBtn = () => {
+    const input =  e('.rgb')
+    input.addEventListener('change', (event) => {
+        log(input.value, typeof input.value)
+        let data =  Number(input.value)
+        return data
+    })
+}
+
 const rgbSplit = (pixels) => {
     for (var i = 0; i < pixels.data.length; i+= 4) {
         pixels.data[i - 150] = pixels.data[i + 0]
@@ -28,15 +37,20 @@ const drawCanvas = () => {
         canvas.width = w
         canvas.height = h
         log(w, h)
+        let alpha = alphaBtn()
 
-        setInterval(() => {
+
+        setInterval( async () => {
             ctx.drawImage(video, 0, 0, w, h)
 
             let pixels = ctx.getImageData(0, 0, w, h)
 
-            // pixels = rgbSplit(pixels)
+            pixels = rgbSplit(pixels)
 
-            ctx.globalAlpha = 0.05
+            ctx.globalAlpha = alpha
+
+            log(ctx.globalAlpha)
+
 
             ctx.putImageData(pixels, 0, 0)
 

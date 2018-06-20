@@ -24,3 +24,9 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 
 ## ![have fun with webcam ](https://github.com/eddy0/handytool/tree/master/video)
+![open to play it](https://eddy0.github.io/handytool/video/index.html)
+
+
+
+## ![highlight when hover on the a tag ](https://github.com/eddy0/handytool/tree/master/high)
+![highlightonHover](./highlightonHover/highlightonhover.gif)

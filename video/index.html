@@ -5,10 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>live video</title>
+    <style media="screen">
+
+        #video {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .control {
+            margin-top: 20px;
+        }
+
+        button {
+            width: 100px;
+            margin: 20px;
+            padding: 15px;
+            border: 0;
+            background-color: lightblue;
+            color: #fff;
+        }
+        button.active {
+            background-color: seagreen;
+        }
+
+    </style>
 </head>
 <body>
     <canvas id="canvas"></canvas>
-    <video id="id-video" src="" hidden ></video>
+    <video id="video" src=""  ></video>
+    <div class="control">
+        <!-- <button class="button shadow" data-data='1'>凌波微步</button> -->
+        <!-- <label for="">凌波微步</label>
+        <input type="range" class="button rgb"  min="0.05" max="1" step="0.01" value="1">
+        <span class="amount">1</span> -->
+    </div>
 
 <script src="../utils.js">
 

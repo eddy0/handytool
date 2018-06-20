@@ -28,5 +28,8 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 
 
-## ![highlight when hover on the a tag ](https://github.com/eddy0/handytool/tree/master/high)
+## ![highlight when hover on the a tag ](https://github.com/eddy0/handytool/tree/master/highlightonHover)
 ![highlightonHover](./highlightonHover/highlightonhover.gif)
+
+## ![stickyNav when scroll ](https://github.com/eddy0/handytool/tree/master/stickyNav)
+![stickyNav](./stickyNav/stickyNav.gif)

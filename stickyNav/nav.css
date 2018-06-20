@@ -1,0 +1,100 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            font-family: sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .heading-1 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 2px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+
+        header {
+            background-image: linear-gradient( to right, lightblue, seagreen);
+
+        }
+
+        header h1 {
+            text-align: center;
+            padding: 10rem 0 5rem;
+            transition: all 0.8s ease;
+
+        }
+
+        nav {
+            transition: all 0.5s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0,0,0, 0.7);
+
+        }
+
+        .logo {
+            height: 45px;
+            max-width: 0;
+            margin-left: 10%;
+        }
+
+        body.nav--sticky .logo {
+            max-width: 500px;
+            transition: all 2s;
+
+        }
+
+        header nav ul {
+            list-style: none;
+            flex: 1;
+            display: flex;
+            font-size: 1.8rem;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .nav-item {
+            color: #f6f6f6;
+            padding: 1.5rem 3rem;
+            font-size: 2rem;
+            display: block;
+        }
+
+        .nav-item:hover {
+            color: #333;
+            background-color: #ddd;
+        }
+
+        main {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5rem;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 5rem;
+        }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>speach recognition</title>
+</head>
+<body>
+
+    <div class="container">
+
+    </div>
+
+<script src="../utils.js">
+
+</script>
+<script>
+
+const updateFontsize = (content) => {
+    let container = e('.container')
+    let mapper = {
+        '加粗': ['fontWeight', '800'],
+        '变细': ['fontWeight', '300'],
+        '大': ['fontSize', '30px'],
+        '小': ['fontSize', '16px'],
+        '白色' :['color', '#fff'],
+        '黑色' :['color', '#000'],
+    }
+    if (content.includes('字体')) {
+        Object.keys(mapper).map((key) => {
+            if (content.includes(key)) {
+                let [abbr, value] = mapper[key]
+                container.style[abbr] = value
+            }
+        })
+    }
+}
+
+const appenContent = (content) => {
+    let container = e('.container')
+    let t = (`
+        <p>${content}</p>
+        `)
+    container.insertAdjacentHTML('beforeend', t)
+}
+
+const updateBackground = (content) => {
+    let mapper = {
+        '黑色': 'black',
+        '白色': 'white',
+        '蓝色': 'lightblue',
+        '红色': 'lightcoral',
+    }
+    if (content.includes('背景色')) {
+        Object.keys(mapper).map((color) => {
+            if (content.includes(color)) {
+                log('ok')
+                let r = mapper[color]
+                document.body.style.backgroundColor = r
+            }
+        })
+    }
+}
+
+const init = () => {
+    window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
+
+    const recognition = new SpeechRecognition()
+    recognition.interimResults = true
+
+    recognition.addEventListener('result', (event) => {
+        // log('recognition', event.results[0][0])
+        let content = Array.from(event.results)
+                        .map((result) => result[0])
+                        .map(((result) => result.transcript))
+                        .join('')
+
+        if (event.results[0].isFinal) {
+            appenContent(content)
+            updateBackground(content)
+            updateFontsize(content)
+        }
+
+    })
+
+    recognition.addEventListener('end', recognition.start)
+
+    recognition.start()
+}
+
+
+const main = () => {
+    init()
+}
+
+main()
+
+
+</script>
+</body>
+</html>

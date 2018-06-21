@@ -38,3 +38,6 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 ## ![horizentalScroll](https://github.com/eddy0/handytool/tree/master/scroll)
 ![scroll](./scroll/horizentalScroll.gif)
+
+## ![recognition](https://github.com/eddy0/handytool/tree/master/speechRecognition)
+[demo](https://eddy0.github.io/handytool/speechRecognition/index.html)

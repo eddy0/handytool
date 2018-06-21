@@ -7,12 +7,37 @@
     <title>speach recognition</title>
 </head>
 <body>
+    <div class="">
+        说:   '字体' : 关键词  大, 小, 加粗, 变细, 白色, 黑色
+    </div>
+    <div>
+         说:  '背景色' : 关键词: 白, 黑, 红, 蓝
+    </div>
+
 
     <div class="container">
 
     </div>
 
 <script src="../utils.js">
+
+</script>
+
+<script>
+
+const scroll = () => {
+    let y = document.body.clientHeight
+    let h = window.innerHeight
+
+    log('y', y, h)
+    if ( y > h) {
+        window.scrollTo({
+            'top': y,
+             behavior: "smooth",
+        })
+    }
+}
+
 
 </script>
 <script>
@@ -81,6 +106,8 @@ const init = () => {
             updateBackground(content)
             updateFontsize(content)
         }
+
+        scroll()
 
     })
 

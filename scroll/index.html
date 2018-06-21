@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>drag and scroll</title>
+    <style media="screen">
+
+        * {
+            margin: 0;
+        }
+
+        header {
+            height: 500px;
+            background-color: purple;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            /* padding: 0; */
+            overflow: hidden;
+        }
+
+        .items {
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+            margin-bottom: 10px;
+        }
+
+        .items:active {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+            transform: translateY(-4px);
+        }
+
+        .item {
+            height: 50px;
+            min-width: max-content;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 50px;
+            background-color: lightblue;
+            text-align: center;
+            margin-right: 10px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <div class="box">
+    <ul class="items">
+        <li class="item item-1">item 1</li>
+        <li class="item item-2">item 2</li>
+        <li class="item item-3">item 3</li>
+        <li class="item item-4">item 4</li>
+        <li class="item item-5">item 5</li>
+        <li class="item item-6">item 6</li>
+        <li class="item item-7">item 7</li>
+        <li class="item item-8">item 8</li>
+        <li class="item item-9">item 9</li>
+        <li class="item item-10">item 10</li>
+        <li class="item item-11">item 11</li>
+        <li class="item item-12">item 12</li>
+        <li class="item item-13">item 13</li>
+        <li class="item item-14">item 14</li>
+        <li class="item item-15">item 15</li>
+        <li class="item item-16">item 16</li>
+        <li class="item item-17">item 17</li>
+        <li class="item item-18">item 18</li>
+        <li class="item item-19">item 19</li>
+        <li class="item item-20">item 20</li>
+        <li class="item item-21">item 21</li>
+        <li class="item item-22">item 22</li>
+        <li class="item item-23">item 23</li>
+        <li class="item item-24">item 24</li>
+        <li class="item item-25">item 25</li>
+        <li class="item item-26">item 26</li>
+        <li class="item item-27">item 27</li>
+        <li class="item item-28">item 28</li>
+        <li class="item item-29">item 29</li>
+        <li class="item item-30">item 30</li>
+    </ul>
+    </div>
+
+
+<script src="../utils.js"></script>
+<script src="./scroll.js"></script>
+</body>
+</html>

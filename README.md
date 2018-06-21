@@ -37,4 +37,4 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 
 ## ![horizentalScroll](https://github.com/eddy0/handytool/tree/master/scroll)
-![scroll](.scroll/horizentalScroll.gif)
+![scroll](./scroll/horizentalScroll.gif)

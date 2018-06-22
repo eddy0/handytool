@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f6f6f6;
+        }
+
+        .main {
+            max-width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        p {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            transform: translateX(-200px);
+            transition: all 0.2s;
+        }
+
+        p.active {
+            transform: translateX(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="main">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, quia provident quidem minus voluptatum optio magni, mollitia, eos tempora quo odit itaque ipsa. Fuga animi, dolor nulla dolorum adipisci.
+        </p>
+
+    </main>
+
+    <script src="../utils.js"></script>
+    <script>
+
+        const p = es('p')
+        p.forEach((element) => {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY + window.innerHeight - element.offsetTop - element.offsetHeight / 2 > 0 ) {
+                    element.classList.add('active')
+                }
+            })
+        })
+
+    </script>
+
+</body>
+</html>

@@ -48,3 +48,7 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ## ![scroll to show](https://github.com/eddy0/handytool/tree/master/scrollToShow)
 ![scroll to show](./scroll/horizentalScroll.gif)
 [demo](https://eddy0.github.io/handytool/scrollToShow/index.html)
+
+## ![hover to show](https://github.com/eddy0/handytool/tree/master/hoverToShow)
+![hover to show](./hoverToShow/hoveToShow.gif)
+[demo](https://eddy0.github.io/handytool/hoverToShow/index.html)

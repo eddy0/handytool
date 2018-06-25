@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hover to show</title>
+    <style media="screen">
+        .container {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        }
+        .container ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        .list-item {
+            width: 100px;
+            height: 100px;
+            background-color: #999;
+            margin: 0 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        .list-item > span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #333;
+            color: #fff;
+            border-radius: 3px;
+            padding: 2px 5px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            z-index: 1000;
+        }
+        .list-item:hover > span {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <ul>
+            <li class="list-item">
+                item 1
+                <span>todo</span>
+            </li>
+            <li class="list-item">item 2
+                <span>todo</span>
+            </li>
+            <li class="list-item">item 3
+                <span>todo</span>
+            </li>
+            <li class="list-item">item 4
+                <span>todo</span>
+
+            </li>
+            <li class="list-item">item 5
+                <span>todo</span>
+
+            </li>
+        </ul>
+    </div>
+
+<script src="../utils.js">
+
+</script>
+
+
+<script type="text/javascript">
+    const items = es('.list-item')
+    items.forEach((box) => {
+        let isIn = false
+        let left
+        let top
+        let offset = 10
+
+        box.addEventListener('mouseenter', (event) => {
+            isIn = true
+            let rect = box.getBoundingClientRect()
+            left = rect.left
+            top = rect.top
+        })
+
+        box.addEventListener('mouseleave', (event) => {
+            isIn = false
+        })
+
+        box.addEventListener('mousemove', (event) => {
+            if (isIn) {
+                let target = box.querySelector('span')
+                target.style.left = `${event.clientX - left + offset}px`
+                target.style.top = `${event.clientY - top + offset}px`
+            }
+        })
+    })
+</script>
+
+
+</body>
+</html>

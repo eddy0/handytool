@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./music.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id-music">
+             <div class="music-wrapper">
+                 <div class="song-info">
+                     <div class="song-name">Chasing Pavements</div>
+                     <div class="song-author">Adele</div>
+                 </div>
+                 <div class="audio-progress">
+                     <span id="id-music-current">00:00</span>
+                     <div class="bar-container">
+                         <div class="timeline_wrap">
+                             <div class="timeline progress-bar-wrapper">
+                                 <!--<div class="full_line"></div>-->
+                                 <div class="line-preload" style="width: 0px;"></div>
+                                 <div class="line-played" style="width: 0px;">
+                                     <span class="progress-bar-pointer"></span>
+                                 </div>
+                             </div>
+                         </div>
+
+                     </div>
+                     <span id="id-music-duration">00:00</span>
+                 </div>
+                 <div class="audio-controller">
+                     <button class="wd-btn btn-music-last" data-offset="-1">last</button>
+                     <button class="wd-btn btn-music-play ">play</button>
+                     <button class="wd-btn btn-music-pause wd-on">pause</button>
+                     <button class="wd-btn btn-music-next" data-offset="1">next</button>
+                     <button id="id-model-normal" class="player-model model-active ">normal model</button>
+                     <button id="id-model-repeat" class="player-model ">repeat model</button>
+                     <button id="id-model-shuffle" class="player-model">shuffle model</button>
+                 </div>
+             </div>
+             <div class="music-playlist">
+                 <div class="libarary-title" >Play List</div>
+                 <ul class="list-items" data-songs="4" >
+                 </ul>
+             </div>
+         </div>
+     </div>
+<audio src="https://raw.githubusercontent.com/eddy0/ReactExpress/master/static/music/4.mp3" id="id-player-audio"></audio>
+<script src="./wd.js">
+
+</script>
+<script src="./music.js">
+
+</script>
+</body>
+</html>

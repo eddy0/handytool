@@ -18,7 +18,6 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ![mutiSelect](./mutiSelect/mutiSelect.gif)
 
 
-
 ## [dynamic text shadow offset when mouse move](https://github.com/eddy0/handytool/tree/master/dynamicTextShadow)
 ![textShadow](./dynamicTextShadow/textShadow.gif)
 
@@ -36,8 +35,9 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 
 
-## ![horizentalScroll](https://github.com/eddy0/handytool/tree/master/scroll)
+## ![horizental Scroll](https://github.com/eddy0/handytool/tree/master/scroll)
 ![scroll](./scroll/horizentalScroll.gif)
+
 [demo](https://eddy0.github.io/handytool/scroll/index.html)
 
 
@@ -46,15 +46,18 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 [demo](https://eddy0.github.io/handytool/speechRecognition/index.html)
 
 ## ![scroll to show](https://github.com/eddy0/handytool/tree/master/scrollToShow)
-![scroll to show](./scroll/horizentalScroll.gif)
+![scroll to show](./scrollToShow/scrollToShow.gif)
+
 [demo](https://eddy0.github.io/handytool/scrollToShow/index.html)
 
 ## ![hover to show](https://github.com/eddy0/handytool/tree/master/hoverToShow)
 ![hover to show](./hoverToShow/hoveToShow.gif)
+
 [demo](https://eddy0.github.io/handytool/hoverToShow/index.html)
 
-## ![hover to show](https://github.com/eddy0/handytool/tree/master/musicplayer)
-![hover to show](./musicplayer/music.gif)
+## ![music player](https://github.com/eddy0/handytool/tree/master/musicplayer)
+![music player](./musicplayer/music.gif)
+
 [demo](https://eddy0.github.io/handytool/musicplayer/index.html)
 
 

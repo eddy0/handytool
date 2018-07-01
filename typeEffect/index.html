@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>typeEffect</title>
+    <style>
+body {
+    padding: 10%;
+}
+
+p {
+    display: inline-block;
+    position: relative;
+}
+
+/* p:after {
+    content: '|';
+    display: inline-block;
+    position: relative;
+    animation: carnet 100ms linear infinite;
+
+}
+
+@keyframes carnet {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+    </style>
+</head>
+
+<body>
+    <p class="show">
+
+    </p>
+
+    <script>
+class TextEffect {
+    constructor({
+        className,
+        words,
+        interval,
+        delay,
+        positive = true
+    }) {
+        this.className = className
+        this.words = words
+        this.interval = interval || 100
+        this.delay = delay || 500
+        this.positive = positive
+        this.init()
+    }
+
+    init() {
+        if (!Array.isArray(this.words)) {
+            alert('pls use array & more then one item')
+            return
+        }
+        this.box = document.querySelector(`.${this.className}`)
+        this.start()
+    }
+
+    start() {
+        let count = 0
+        let text = this.words[count]
+        let positive = this.positive
+        let i = this.positive ? 0 : text.length
+        this.animation = setInterval(() => {
+            // 正向
+            if (positive) {
+                if (i < text.length) {
+                    text = this.words[count]
+                    let word = text[i]
+                    this.box.insertAdjacentHTML('beforeend', word)
+                    i++
+                }
+                if (i === text.length) {
+                    positive = !positive
+                }
+            } else {
+                if (i <= text.length) {
+                    let word = text.slice(0, i)
+                    this.box.innerText = ''
+                    this.box.insertAdjacentHTML('beforeend', word)
+                    i--
+                }
+                if (i < 0) {
+                    // reset i
+                    i = 0
+                    // reset count
+                    if (count < this.words.length - 1) {
+                        count += 1
+                    } else {
+                        count = 0
+                    }
+                    setTimeout(() => {
+                        positive = true
+                    }, this.delay)
+                }
+            }
+        }, this.interval)
+
+    }
+}
+    </script>
+    <script>
+/**
+ * config 必须提供 className 和 words, words 为一个 array
+ */
+
+const __main = () => {
+    let config = {
+        className: 'show',
+        words: ['Lorem', 'consectetur', 'god', 'lodd', 'consectetur adipisicing elit. Natus dolorum l'],
+        interval: 100,
+        delay: 500,
+        positive: true
+    }
+    new TextEffect(config)
+}
+__main()
+    </script>
+</body>
+
+</html>

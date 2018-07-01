@@ -56,3 +56,9 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ## ![hover to show](https://github.com/eddy0/handytool/tree/master/musicplayer)
 ![hover to show](./musicplayer/music.gif)
 [demo](https://eddy0.github.io/handytool/musicplayer/index.html)
+
+
+
+## ![textEffect](https://github.com/eddy0/handytool/tree/master/typeEffect)
+![textEffect](./typeEffect/textEffect.gif)
+[demo](https://eddy0.github.io/handytool/typeEffect/index.html)

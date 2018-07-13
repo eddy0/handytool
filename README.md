@@ -64,9 +64,16 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 ## ![textEffect](https://github.com/eddy0/handytool/tree/master/typeEffect)
 ![textEffect](./typeEffect/textEffect.gif)
+
 [demo](https://eddy0.github.io/handytool/typeEffect/index.html)
 
 
 ## ![loading](https://github.com/eddy0/handytool/tree/master/loading)
 ![textEffect](./loading/loading.gif)
+
 [demo](https://eddy0.github.io/handytool/loading/index.html)
+
+## ![countdown](https://github.com/eddy0/handytool/tree/master/countdown)
+![countdown](./countdown/countdown.gif)
+
+[demo](https://eddy0.github.io/handytool/countdown/index.html)

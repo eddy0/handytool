@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>countDown</title>
+    <style>
+        .box {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">3000</div>
+
+<script>
+
+    const e = (sel) => document.querySelector(sel)
+    const log = console.log.bind(console)
+</script>
+
+<script>
+    const appendHTML = (box, value) => {
+        value = value.toLocaleString()
+        box.innerText = value
+    }
+
+    const __countDown = () => {
+        let box = e('.box')
+        let value = Number(box.innerText)
+        let interval = 100
+        let count = (interval) => {
+             setTimeout( () => {
+                if (value > 0) {
+                    value = value - 1
+                    appendHTML(box, value)
+                }
+                count(interval)
+            }, interval)
+        }
+        count(interval)
+    }
+
+    __countDown()
+
+
+
+</script>
+</body>
+</html>

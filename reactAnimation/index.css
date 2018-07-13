@@ -1,0 +1,76 @@
+body {
+    background-color: #333;
+}
+
+.box{
+    margin-top: 50px;
+    position: relative;
+    height: 100px;
+    width: 200px;
+    perspective: 80000px;
+}
+
+.box span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #61DAFB;
+    border-radius: 50%;
+}
+
+.box .ring1, .box .ring2, .box .ring3 {
+    position: absolute;
+    margin-left: 50%;
+    left: 40px;
+    top: -5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border-left: 5px solid #61DAFB;
+    border-top: 5px solid  #61DAFB;
+    perspective-origin: center;
+
+}
+
+.box .ring1 {
+     animation: rotate1 1s linear infinite;
+}
+
+.box .ring2 {
+     animation: rotate2 1s linear infinite;
+}
+
+.box .ring3 {
+     animation: rotate3 1s linear infinite;
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotateZ(120deg) rotateX(60deg)  rotateZ(0deg) ;
+    }
+    to {
+        transform: rotateZ(120deg)  rotateX(60deg)  rotateZ(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotateZ(240deg) rotateX(60deg)  rotateZ(0deg) ;
+    }
+    to {
+        transform: rotateZ(240deg)  rotateX(60deg)  rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    from {
+        transform: rotateZ(360deg) rotateX(60deg)  rotateZ(0deg) ;
+    }
+    to {
+        transform: rotateZ(360deg)  rotateX(60deg)  rotateZ(360deg);
+    }
+}

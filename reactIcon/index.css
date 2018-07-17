@@ -1,0 +1,102 @@
+html {
+        background-color: rgb(62,59,102);
+        background-image: linear-gradient(center, rgba(65,59,102,1) 0%, rgba(0,0,0,1) 100%);
+        height: 50vh;
+        width: 100%;
+        background-color: #3e3b66;
+        padding: 50px
+}
+
+
+.center {
+    backface-visibility: hidden;
+
+}
+
+[class*='ring']  {
+    border-radius: 50%;
+    border: 40px solid rgba(white, 0.6);
+    box-shadow: 0 0 10px rgba(white, 0.3), inset 0 0 20px rgba(white, 0.3);
+    height: 30em;
+    width: 30em;
+    position: absolute;
+    transition: all  1s  ease-in-out;
+
+}
+
+[class*='ring'] div  {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 2s linear infinite;
+
+
+}
+
+[class*='ring'] div:after {
+    content: '';
+    display: block;
+    left: 50%;
+    margin-left:3em;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: -1.2em;
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(black, 0.8);
+    transform: scale(3,1);
+
+}
+
+.ring1 {
+    transform: rotateZ(120deg) scale(0.3,1);
+}
+.ring2 {
+    transform: rotateZ(240deg) scale(0.333,1);
+}
+.ring3 {
+    transform: rotateZ(360deg) scale(0.333,1);
+}
+
+.ring1 div:after {
+    background-color: #2ecc71;
+    box-shadow: 0 0 20px #2ecc71;
+}
+
+.ring2 div:after {
+    background-color: lightblue;
+    box-shadow: 0 0 20px #2ecc71;
+}
+
+.ring3 div:after {
+    background-color: lightcoral;
+    box-shadow: 0 0 20px #2ecc71;
+}
+
+section:hover .ring1 {
+    border: 0.6em solid rgba(white, 0.8);
+    transform: rotate(0deg) scale(0.333,0.333) perspective(600px) rotateX(60deg);
+}
+
+section:hover .ring2 {
+    border: 0.6em solid rgba(white, 0.8);
+    transform: rotate(0deg) scale(0.6,0.6) perspective(600px) rotateX(60deg);
+}
+
+section:hover .ring3 {
+    border: 0.6em solid rgba(white, 0.8);
+    transform: rotate(0deg) scale(0.9,0.9) perspective(600px) rotateX(60deg);
+}
+
+
+
+@keyframes rotate{
+    from{
+        transform:  rotate(0deg);
+    }
+    to {
+        transform:  rotate(360deg);
+    }
+}

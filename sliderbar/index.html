@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>slider</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slider__bar"></div>
+        <div class="slider__progress"></div>
+
+    </div>
+
+    <script type="text/javascript">
+        const e = (sel) => document.querySelector(sel)
+        const log = console.log.bind(console)
+    </script>
+
+    <script type="text/javascript">
+        const handleSlider = () => {
+            const ball = e('.slider__progress')
+            const bar = e('.slider__bar')
+            let length = bar.getBoundingClientRect().height
+            let isDragling = false
+            let start
+            let original
+            ball.addEventListener('mousedown', (event) => {
+                event.preventDefault()
+                isDragling = true
+                start = event.clientY
+                original = Number(ball.style.top.slice(0, -1))
+            })
+
+            window.addEventListener('mouseup', () => {
+                isDragling = false
+            })
+
+            window.addEventListener('mousemove', (event) => {
+                if (isDragling) {
+                    let y = ball.getBoundingClientRect().y
+                    let offset = event.clientY - start
+                    let offsetPercentage = Math.floor(offset / length * 100)
+                    let top = original + offsetPercentage
+                    if (top >= 0 && top <= 100) {
+                        ball.style.top = `${top}%`
+                    }
+                }
+            })
+        }
+
+
+        const __main = () => {
+            handleSlider()
+        }
+
+        __main()
+    </script>
+</body>
+</html>

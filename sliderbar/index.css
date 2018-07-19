@@ -1,0 +1,45 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    margin: 50px;
+    height: 10rem;
+    position: relative;
+}
+
+.slider__bar {
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+
+}
+.slider__progress{
+    position: absolute;
+    left: 0%;
+    margin-left: -10px;
+    margin-top:-10px;
+    top:0%;
+    width: 20px;
+    height: 20px;
+    border:1px solid lightblue;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__progress:active {
+    cursor: -webkit-grabbing;
+}

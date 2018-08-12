@@ -91,7 +91,25 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 [demo](https://eddy0.github.io/handytool/reactIcon/index.html)
 
 
-## ![reactIcon](https://github.com/eddy0/handytool/tree/master/moveTextOnScroll)
-![reactIcon](.moveTextOnScroll/movetext.gif)
+## ![movetext](https://github.com/eddy0/handytool/tree/master/moveTextOnScroll)
+![movetext](.moveTextOnScroll/movetext.gif)
 
 [demo](https://eddy0.github.io/handytool/moveTextOnScroll/index.html)
+
+
+
+## ![3Danimation1](https://github.com/eddy0/handytool/tree/master/3Danimation/3dGear.html)
+![reactIcon](.3Danimation/3dRotate1.gif)
+
+[demo](https://eddy0.github.io/handytool/3Danimation/3dGear.html)
+
+## ![3Danimation2](https://github.com/eddy0/handytool/tree/master/3Danimation/3dsquare.html)
+![reactIcon](.3Danimation/3dRotate2.gif)
+
+[demo](https://eddy0.github.io/handytool/3Danimation/3dsquare.html)
+
+
+## ![3Danimation3](https://github.com/eddy0/handytool/tree/master/3Danimation/3dRotate.html)
+![reactIcon](.3Danimation/3dRotate3.gif)
+
+[demo](https://eddy0.github.io/handytool/3Danimation/3dRotate.html)

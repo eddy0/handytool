@@ -1,0 +1,33 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    height: 5000px;
+    overflow-x: hidden;
+    background-color: #00947a;
+}
+
+h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    white-space: nowrap;
+    font-size: 5rem;
+    color: #fff;
+}

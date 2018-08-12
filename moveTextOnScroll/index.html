@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>move text on scroll</h1>
+<script type="text/javascript">
+
+    document.addEventListener('scroll', () => {
+        let text = document.querySelector('h1')
+        // let height = Math.max( 500 - 0.35 * window.scrollY, 50)
+        let scale = Math.min(0.001 * window.scrollY, 1.3)
+        text.style.transform = `translate(-50%, -50%) scale(${scale})`
+    })
+
+</script>
+</body>
+</html>

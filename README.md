@@ -89,3 +89,9 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ![reactIcon](./reactIcon/reactIcon.gif)
 
 [demo](https://eddy0.github.io/handytool/reactIcon/index.html)
+
+
+## ![reactIcon](https://github.com/eddy0/handytool/tree/master/moveTextOnScroll)
+![reactIcon](.moveTextOnScroll/movetext.gif)
+
+[demo](https://eddy0.github.io/handytool/moveTextOnScroll/index.html)

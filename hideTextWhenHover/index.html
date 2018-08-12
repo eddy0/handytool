@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo expedita enim eius praesentium facere soluta similique eum, impedit eos aspernatur dolores eveniet ipsum, eaque sed quo. Numquam nobis, nemo ipsum?
+    </div>
+    <div class="mask1"></div>
+    <div class="mask"></div>
+
+<script type="text/javascript">
+    document.addEventListener('mousemove', (event) => {
+        let mask = document.querySelector('.mask')
+        let x = event.clientX
+        let y = event.clientY
+        mask.style.left = `${x}px`
+        mask.style.top = `${y}px`
+    })
+</script>
+</body>
+</html>

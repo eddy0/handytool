@@ -1,0 +1,58 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-color: #607b8d;
+
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    color: #607b8d;
+    box-shadow: 0 1px 10px #607b8d;
+}
+
+
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    fill: #000;
+    filter: blur(15px);
+    mix-blend-mode: difference;
+    box-shadow: 0 0 30px 10px rgba(255,255,255,0.3);
+    transition: all 0.1s  ease;
+}
+
+
+.box:hover {
+
+
+}

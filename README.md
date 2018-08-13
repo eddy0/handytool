@@ -115,7 +115,7 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 [demo](https://eddy0.github.io/handytool/3Danimation/3dRotate.html)
 
 
-## ![cssHover](https://github.com/eddy0/handytool/tree/master/cssHover/index.html)
+## ![cssHover](https://github.com/eddy0/handytool/tree/master/cssHoverEffect/index.html)
 ![cssHover](./cssHoverEffect/cssHover.gif)
 
-[demo](https://eddy0.github.io/handytool/cssHover/index.html)
+[demo](https://eddy0.github.io/handytool/cssHoverEffect/index.html)

@@ -7,23 +7,32 @@ const getVideo = () => {
     }).catch((err) => alert('please allow the webcam to operate it'))
 }
 
-const alphaBtn = () => {
+// const alphaBtn = () => {
+//     const input =  e('.rgb')
+//     input.addEventListener('change', (event) => {
+//         log(input.value, typeof input.value)
+//         let data =  Number(input.value)
+//         return data
+//     })
+// }
+//
+let offset
+
+const offsetConfig = () => {
     const input =  e('.rgb')
-    input.addEventListener('change', (event) => {
-        log(input.value, typeof input.value)
-        let data =  Number(input.value)
-        return data
+    input.addEventListener('input', (event) => {
+        let data = Number(input.value)
+        offset =  data
     })
 }
 
-const rgbSplit = (pixels) => {
-    for (var i = 0; i < pixels.data.length; i+= 4) {
-        pixels.data[i - 150] = pixels.data[i + 0]
-        pixels.data[i + 500] = pixels.data[i + 1]
-        pixels.data[i - 550] = pixels.data[i + 2]
-    }
-
-    return pixels
+const rgbSplit = (pixels, offset) => {
+        for (let i = 0; i < pixels.data.length; i+= 4) {
+            pixels.data[i - offset] = pixels.data[i + 0]
+            pixels.data[i + offset + 200  ] = pixels.data[i + 1]
+            pixels.data[i - offset - 150  ] = pixels.data[i + 2]
+        }
+        return pixels
 }
 
 const drawCanvas = () => {
@@ -37,7 +46,8 @@ const drawCanvas = () => {
         canvas.width = w
         canvas.height = h
         log(w, h)
-        let alpha = alphaBtn()
+        // let alpha = alphaBtn()
+        // let offset = 150
 
 
         setInterval( async () => {
@@ -45,15 +55,16 @@ const drawCanvas = () => {
 
             let pixels = ctx.getImageData(0, 0, w, h)
 
-            pixels = rgbSplit(pixels)
+            pixels = rgbSplit(pixels, offset)
 
-            ctx.globalAlpha = alpha
 
-            log(ctx.globalAlpha)
 
+
+            // ctx.globalAlpha = alpha
+
+            // log(ctx.globalAlpha)
 
             ctx.putImageData(pixels, 0, 0)
-
 
         }, 30)
     })
@@ -62,6 +73,7 @@ const drawCanvas = () => {
 
 
 const __main = () => {
+    offsetConfig()
     getVideo()
     drawCanvas()
 }

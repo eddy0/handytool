@@ -47,8 +47,8 @@ const updateFontsize = (content) => {
         '变细': ['fontWeight', '300'],
         '大': ['fontSize', '30px'],
         '小': ['fontSize', '16px'],
-        '白色' :['color', '#fff'],
-        '黑色' :['color', '#000'],
+        '白' :['color', '#fff'],
+        '黑' :['color', '#000'],
     }
     if (content.includes('字体')) {
         Object.keys(mapper).map((key) => {
@@ -70,10 +70,10 @@ const appenContent = (content) => {
 
 const updateBackground = (content) => {
     let mapper = {
-        '黑色': 'black',
-        '白色': 'white',
-        '蓝色': 'lightblue',
-        '红色': 'lightcoral',
+        '黑': 'black',
+        '白': 'white',
+        '蓝': 'lightblue',
+        '红': 'lightcoral',
     }
     if (content.includes('背景色')) {
         Object.keys(mapper).map((color) => {

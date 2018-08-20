@@ -119,3 +119,9 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ![cssHover](./cssHoverEffect/cssHover.gif)
 
 [demo](https://eddy0.github.io/handytool/cssHoverEffect/index.html)
+
+
+## ![cloudAnimation](https://github.com/eddy0/handytool/tree/master/cloudAnimation/index.html)
+![cloudAnimation](./cloudAnimation/cloud.gif)
+
+[demo](https://eddy0.github.io/handytool/cloudAnimation/index.html)

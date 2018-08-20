@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cloud animaiton</title>
+    <style media="screen">
+        *,
+        *:after,
+        *:before {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: sans-serif;
+            line-height: 1.6;
+            box-sizing: border-box;
+            background: url('bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .cloud {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: url('cloud.png');
+            will-change: background;
+            animation: move 60s linear infinite;
+        }
+
+        @keyframes move {
+            from {
+                background-position: 0px;
+            }
+            to {
+                background-position: -5440px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cloud"></div>
+
+</body>
+</html>

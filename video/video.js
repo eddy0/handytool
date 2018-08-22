@@ -47,6 +47,7 @@ const drawCanvas = () => {
         canvas.height = h
         log(w, h)
         // let alpha = alphaBtn()
+        // 
         // let offset = 150
 
 

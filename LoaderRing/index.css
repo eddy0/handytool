@@ -51,7 +51,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    border: 1px solid rgba(255,255,255,0.1);
+    /* border: 1px solid rgba(255,255,255,0.1); */
     animation: rotate 4s linear infinite;
 }
 
@@ -70,8 +70,8 @@ body {
     left: 40px;
     bottom: 40px;
     right: 40px;
-    border: 1px solid rgba(255,255,255,0.1);
-    animation: rotate-reverse 4s linear infinite;
+    /* border: 1px solid rgba(255,255,255,0.1); */
+    animation: rotate-reverse 3s linear infinite;
 
 }
 
@@ -81,8 +81,7 @@ body {
     0 0 40px rgba(255,214,0,1),
     0 0 60px rgba(255,214,0,1),
     0 0 80px rgba(255,214,0,1),
-    0 0 0 4px rgba(255,214,0,0.1)
-    ;
+    0 0 0 4px rgba(255,214,0,0.1);
 }
 
 .glowing span:nth-child(3) {
@@ -90,18 +89,17 @@ body {
     left: 80px;
     bottom: 80px;
     right: 80px;
-    border: 1px solid rgba(255,255,255,0.1);
-    animation: rotate 4s linear infinite;
+    /* border: 1px solid rgba(255,255,255,0.1); */
+    animation: rotate 3s linear infinite;
 }
 
-.glowing span:nth-child(2)::before {
+.glowing span:nth-child(3)::before {
     background-color: rgba(0,226,255,1);
     box-shadow: 0 0 20px rgba(0,226,255,1),
     0 0 40px rgba(0,226,255,1),
     0 0 60px rgba(0,226,255,1),
     0 0 80px rgba(0,226,255,1),
-    0 0 0 4px rgba(0,226,255,0.1)
-    ;
+    0 0 0 4px rgba(0,226,255,0.1);
 }
 
 @keyframes rotate {

@@ -1,0 +1,123 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.glowing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #ff0; */
+    width: 260px;
+    height: 260px;
+}
+
+.glowing span::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: #ff0;
+}
+
+.glowing span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.glowing span:nth-child(1) {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: rotate 4s linear infinite;
+}
+
+.glowing span:nth-child(1)::before {
+    background-color: rgba(134,255,0,1);
+    box-shadow: 0 0 20px rgba(134,255,0,1),
+    0 0 40px rgba(134,255,0,1),
+    0 0 60px rgba(134,255,0,1),
+    0 0 80px rgba(134,255,0,1),
+    0 0 0 4px rgba(134,255,0,.1)
+    ;
+}
+
+.glowing span:nth-child(2) {
+    top: 40px;
+    left: 40px;
+    bottom: 40px;
+    right: 40px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: rotate-reverse 4s linear infinite;
+
+}
+
+.glowing span:nth-child(2)::before {
+    background-color: rgba(255,214,0,1);
+    box-shadow: 0 0 20px rgba(255,214,0,1),
+    0 0 40px rgba(255,214,0,1),
+    0 0 60px rgba(255,214,0,1),
+    0 0 80px rgba(255,214,0,1),
+    0 0 0 4px rgba(255,214,0,0.1)
+    ;
+}
+
+.glowing span:nth-child(3) {
+    top: 80px;
+    left: 80px;
+    bottom: 80px;
+    right: 80px;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: rotate 4s linear infinite;
+}
+
+.glowing span:nth-child(2)::before {
+    background-color: rgba(0,226,255,1);
+    box-shadow: 0 0 20px rgba(0,226,255,1),
+    0 0 40px rgba(0,226,255,1),
+    0 0 60px rgba(0,226,255,1),
+    0 0 80px rgba(0,226,255,1),
+    0 0 0 4px rgba(0,226,255,0.1)
+    ;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate-reverse {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

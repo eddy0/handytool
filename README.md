@@ -125,3 +125,10 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ![cloudAnimation](./cloudAnimation/cloud.gif)
 
 [demo](https://eddy0.github.io/handytool/cloudAnimation/index.html)
+
+## ![smokeEffect](https://github.com/eddy0/handytool/tree/master/smokeEffect/index.html)
+![smokeEffect](./smokeEffect/smoke.gif)
+
+[demo](https://eddy0.github.io/handytool/smokeEffect/index.html)
+
+

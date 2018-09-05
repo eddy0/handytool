@@ -50,16 +50,15 @@ document.addEventListener('mouseup', (event) => {
 })
 
 const bindDragEvent = (item) => {
-
-        item.addEventListener('mousemove', (event) => {
-            if (isDragging ) {
-                // log('mouseover', event.target, isDragging)
-                // item.style.pointerEvents = 'none'
-                let height = dragged.offsetHeight
-                item.style.transform = `translateY(-${height}px)`
-                item.style.transition = 'transform 0.2s cubic-bezier(0.2, 0, 0, 1)'
-            }
-        })
+    item.addEventListener('mousemove', (event) => {
+        if (isDragging) {
+            // log('mouseover', event.target, isDragging)
+            // item.style.pointerEvents = 'none'
+            let height = dragged.offsetHeight
+            item.style.transform = `translateY(-${height}px)`
+            item.style.transition = 'transform 0.2s cubic-bezier(0.2, 0, 0, 1)'
+        }
+    })
 }
 
 const __main = () => {

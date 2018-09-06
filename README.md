@@ -132,3 +132,11 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 [demo](https://eddy0.github.io/handytool/smokeEffect/index.html)
 
 
+
+## [smokeEffect](https://github.com/eddy0/handytool/tree/master/splitImage/index.html)
+![smokeEffect](./splitImage/splitImage.gif)
+
+[demo](https://eddy0.github.io/handytool/splitImage/index.html)
+
+
+

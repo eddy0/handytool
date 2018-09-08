@@ -139,4 +139,8 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 [demo](https://eddy0.github.io/handytool/splitImage/index.html)
 
 
+## [indicator](https://github.com/eddy0/handytool/tree/master/indicator/index.html)
+![indicator](./indicator/indicator.gif)
+
+[demo](https://eddy0.github.io/handytool/indicator/index.html)
 

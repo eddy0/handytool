@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    float: left;
+    /* this is the one */
+    shape-outside: circle();
+    margin: 20px 10px 10px 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 22px;
+}

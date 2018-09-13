@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>slide</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="thumb">
+            <li>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTChHXYYmZVQDs9KJJrM6b6qL2dRS1SmsXo_KvIMSTu6GUXbBFXVbf4eviY-3hGe_-rxfnKmqx0Ru44SzB_K8ARsMAo6YDeVGJUkZ5oqXP_Xj3HKbbsJYdeOQ&usqp=CAY.jpg"
+                    alt="">
+            </li>
+            <li>
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSfSYbsm0HM81Tj92dGVFvurJOvg-yZQMAm0pNbA53oPnp-wWN0D5UGP7fELgsOWqg7YaCSqpNXN_xixGHfxSox3iJdbJ0yLimQsWycPd3K_PyUMsIWwS6s&usqp=CAY.jpg"
+                    alt="">
+
+            </li>
+            <li>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQPV3GovadM-c-ryy5Gxc9-ynhHTlzMUDEh3fM5bj9svrIzNyahbjg9l2idGz1uSGdblcDFUF8iRltkn7XD7_5rSWcQX_FnxBzryAE2037EIbFvHB1Kav2aIg&usqp=CAY.jpg"
+                    alt="">
+
+            </li>
+        </ul>
+        <div class="img-box">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTChHXYYmZVQDs9KJJrM6b6qL2dRS1SmsXo_KvIMSTu6GUXbBFXVbf4eviY-3hGe_-rxfnKmqx0Ru44SzB_K8ARsMAo6YDeVGJUkZ5oqXP_Xj3HKbbsJYdeOQ&usqp=CAY.jpg"
+                alt="">
+        </div>
+    </div>
+
+</body>
+
+<script>
+    const __main = () => {
+        const imgs = document.querySelectorAll('.thumb li')
+        const box = document.querySelector('.img-box img')
+        imgs.forEach((img) => {
+            img.addEventListener('click', (event) => {
+                event.preventDefault()
+                let src = event.target.src
+                box.src = src
+            })
+        })
+
+    }
+    __main()
+</script>
+
+</html>

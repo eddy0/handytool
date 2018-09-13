@@ -144,3 +144,9 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 
 [demo](https://eddy0.github.io/handytool/indicator/index.html)
 
+
+## [slider](https://github.com/eddy0/handytool/tree/master/slider/index.html)
+![indicator](./slider/slide.gif)
+
+[demo](https://eddy0.github.io/handytool/slider/index.html)
+

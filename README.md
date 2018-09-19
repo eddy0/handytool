@@ -158,3 +158,7 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 [demo](https://eddy0.github.io/handytool/buttonHover/index.html)
 
 
+## [svgAnimation](https://github.com/eddy0/handytool/tree/master/svgAnimation/index.html)
+![svgAnimation](./svgAnimation/svgAnimation.gif)
+
+[demo](https://eddy0.github.io/handytool/svgAnimation/index.html)

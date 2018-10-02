@@ -1,0 +1,38 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(#03a9f4, #004b6d );
+    color: #fff;
+    height: 100vh;
+}
+
+div {
+    font-size: 100px;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+div:after {
+    content: attr(data-attr);
+    font-size: inherit;
+    line-height: 1;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    transform: rotateX(180deg) ;
+    text-transform: uppercase;
+    background: linear-gradient(to top, #fff 0, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.8;
+}

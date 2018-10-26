@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+header {
+    background-color: #000;
+    height: 4.4rem;
+}
+nav {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 100rem;
+    padding: 0 2rem;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    align-self: stretch;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav li a:hover {
+    color: #ccc;
+}
+nav .menu-item {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+nav .menu-item.hide {
+    transform: scale(0);
+}
+
+nav li:nth-child(2) .menu-item {
+    transition-delay: 0.2s;
+}
+
+nav li:nth-child(3) .menu-item {
+    transition-delay: 0.3s;
+}
+
+nav li:nth-child(4) .menu-item {
+    transition-delay: 0.4s;
+}
+
+nav li:nth-child(5) .menu-item {
+    transition-delay: 0.5s;
+}
+
+nav li:nth-child(6) .menu-item {
+    transition-delay: 0.6s;
+}
+
+nav li:nth-child(6) .menu-item.hide {
+    transition-delay: 0.2s;
+}
+
+nav li:nth-child(5) .menu-item.hide {
+    transition-delay: 0.3s;
+}
+
+nav li:nth-child(4) .menu-item.hide {
+    transition-delay: 0.4s;
+}
+
+nav li:nth-child(3) .menu-item.hide {
+    transition-delay: 0.5s;
+}
+
+nav li:nth-child(2) .menu-item.hide {
+    transition-delay: 0.6s;
+}
+
+nav .search-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 20rem;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+
+    display: flex;
+    align-items: center;
+}
+
+nav .search-form.active {
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
+
+nav .search-form input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.search-form i {
+    margin-right: 2rem;
+    color: #fff;
+}

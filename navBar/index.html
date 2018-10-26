@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>nav bar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa fa-apple"></i></a></li>
+                <li><a href="#" class="menu-item">iphone</a></li>
+                <li><a href="#" class="menu-item">iphone</a></li>
+                <li><a href="#" class="menu-item">iphone</a></li>
+                <li><a href="#" class="menu-item">iphone</a></li>
+                <li><a href="#" class="menu-item">iphone</a></li>
+                <li><a href="#" class="search"><i class="fa fa-search"></i></a></li>
+                <li><a href="#" class=""><i class="fa fa-shopping-basket"></i></a></li>
+            </ul>
+            <div class="search-form">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="search">
+            </div>
+
+        </nav>
+    </header>
+    <script>
+        var log = console.log.bind(console)
+
+        var e = (sel) => document.querySelector(sel)
+
+        const eventListen = () => {
+            let button = e('.search')
+            let items = document.querySelectorAll('.menu-item')
+            let input = e('.search-form')
+            button.addEventListener('click', (event) => {
+                items.forEach(item => {
+                    item.classList.toggle('hide')
+                })
+                input.classList.toggle('active')
+
+                input.focus()
+            })
+        }
+
+        function __main() {
+            eventListen()
+        }
+
+        window.addEventListener('load', () => {
+            __main()
+        })
+
+
+    </script>
+</body>
+
+</html>

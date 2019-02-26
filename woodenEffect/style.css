@@ -21,6 +21,7 @@ h1 {
     text-align: center;
     background: url(bg.jpg);
     background-attachment: fixed;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

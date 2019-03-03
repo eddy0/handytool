@@ -171,3 +171,8 @@ http://htmlpreview.github.io/?https://github.com/eddy0/handytool/blob/master/key
 ![svgAnimation](./navBar/nav.gif)
 
 [demo](https://eddy0.github.io/handytool/navBar/index.html)
+
+## [snak button](https://github.com/eddy0/handytool/tree/master/snackButton/index.html)
+
+
+[demo](https://eddy0.github.io/handytool/snackButton/index.html)

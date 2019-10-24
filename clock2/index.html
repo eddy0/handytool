@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>clock</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id='hr'></div>
+            </div>
+            <div class="minute">
+                <div class="min" id='min'></div>
+            </div>
+            <div class="second">
+                <div class="sec" id='sec'></div>
+            </div>
+        </div>
+
+        <script>
+            const e = (sel) => document.querySelector(sel)
+            const log = console.log.bind(console)
+            const deg = 6
+            const hr = e('#hr')
+            const min = e('#min')
+            const sec = e('#sec')
+            window.setInterval(() => {
+                let day = new Date()
+                let hour = day.getHours() * 30
+                let minute = day.getMinutes() * deg
+                let second = day.getSeconds() * deg
+                hr.style.transform = `rotateZ(${hour+(minute)/12}deg)`
+                min.style.transform = `rotateZ(${minute}deg)`
+                sec.style.transform = `rotateZ(${second}deg)`
+            }, 1000)
+        </script>
+    </body>
+</html>
